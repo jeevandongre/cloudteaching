@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+	
+	
+		<servlet>
+		<servlet-name>CheckUserServlet</servlet-name>
+		<servlet-class>com.cloud.teaching.CheckUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckUserServlet</servlet-name>
+		<url-pattern>/CheckUserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RegisterStaffServlet</servlet-name>
+		<servlet-class>com.cloud.teaching.RegisterStaffServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterStaffServlet</servlet-name>
+		<url-pattern>/RegisterStaffServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ViewUserServlet</servlet-name>
+		<servlet-class>com.cloud.teaching.ViewUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewUserServlet</servlet-name>
+		<url-pattern>/ViewUserServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>BlogLoginServlet</servlet-name>
+		<servlet-class>com.cloud.blogger.BlogLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BlogLoginServlet</servlet-name>
+		<url-pattern>/BlogLoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CheckServlet</servlet-name>
+		<servlet-class>com.cloud.blogger.CheckServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckServlet</servlet-name>
+		<url-pattern>/CheckServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>PostBlogServlet</servlet-name>
+		<servlet-class>com.cloud.blogger.PostBlogServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostBlogServlet</servlet-name>
+		<url-pattern>/PostBlogServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>PrintPostServlet</servlet-name>
+		<servlet-class>com.cloud.blogger.PrintPostServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PrintPostServlet</servlet-name>
+		<url-pattern>/PrintPostServlet</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>Login1.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
